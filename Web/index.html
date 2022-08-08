@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reginaldo G. Santos</title>
+		<!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    </head>
+    <body style="background-color:white">
+		<!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        
+		<!-- NAVBAR --> <!-- Importado com Bootstrap -->
+		<nav class="navbar navbar-expand-lg w-100 p-2 bg-light position-fixed">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">Reginaldo G. Santos</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link" href="#formacao">Formação</a>
+                <a class="nav-link" href="#projetos">Projetos</a>
+                <a class="nav-link" href="#contato">Contato</a>
+                </div>
+            </div>
+        </nav>
+		
+        <!-- HOME-->
+        <section id="home" style="background-color:rgba(3, 58, 153, 0.077); padding-left:20px; padding-top: 70px; padding-bottom: 80px;font: message-box;">
+            <div class="home-info" style="display: flex; justify-content:flex-start; object-fit: scale-down; padding-top: 80px; padding-bottom: 100px;"> <!-- Tag's CSS inseridas no formato inline por se tratar de um projeto simplificado -->
+				  <h4>Sobre mim</h4>
+				  <div style="margin-top: 80px; padding-right: 40px; font-size: large;">
+					Meu nome é Reginaldo. Tenho 32 anos.<br>
+					Sou natural de São Paulo - SP e atualmente resido em Atibaia - SP.<br>
+					Sou casado e tenho uma filha.<br>
+					Tenho experiência nas áreas de manutenção mecânica,<br>
+					elétrica e Automação Industrial.<br>
+					Gosto de tecnologia e atualmente estou cursando<br>
+					Análise e Desenvolvimento de Sistemas na Uninter.<br>
+					Meus hobbies são ouvir música, ler e assistir vídeos no Youtube.<br>
+				   </div>
+				   <img src="./img/foto-perfil.jpg" alt="foto-perfil" class="rounded-circle" style="width: 170px; height:170px; margin-top: 80px;">
+            </div>
+        </section>
+        
+        <!-- FORMAÇÃO--> <!-- Importado com Bootstrap -->
+        <section id="formacao" style="padding-top: 60px;padding-left:20px;font: message-box;">
+            <h4>Formação</h4>
+            <div class="carousel slide" data-bs-ride="carousel" style="padding-top:20px">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="padding-left: 20px;">
+                        <img src="img/uninter.png" class="d-block w-100" alt="ADS">
+                    </div>
+                    <div class="carousel-item" style="padding-left: 20px;">
+                        <img src="img/fesb.png" class="d-block w-100"alt="Técnico">
+                    </div>
+                    <div class="carousel-item" style="padding-left: 20px;">
+                        <img src="img/cisco.png" class="d-block w-100" alt="cisco">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS-->
+        <section id="projetos" style="background-color:rgba(1, 4, 11, 0.815); padding-left:20px; padding-top: 40px; padding-bottom: 10px;font: message-box; color: whitesmoke;">
+            <div class="home-info" style=" object-fit: scale-down; padding-top: 20px;">
+                <h4> Visite minhas redes para conhecer meus projetos:</h4>
+                <div style="margin-top: 20px; font-size: large;">
+                  <a href="https://github.com/reginaldogalli"><img src="img/github.png" class="rounded  img-responsive img-thumbnail" style="height:120px; margin-left: 200px; margin-right: 100px; margin-bottom:40px; margin-top:20px;"></a>
+                  <a href="https://www.linkedin.com/in/reginaldogalli/"><img src="img/linkedin.png" class="rounded  img-responsive img-thumbnail" style="height:120px; margin-left: 200px; margin-right: 100px; margin-bottom:40px; margin-top:20px;"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO--> <!-- Importado com Bootstrap -->
+        <section id="contato" style="padding: 20px; font: message-box; padding-top:100px">
+            <h4 style="margin-bottom:40px">Contato</h4>
+            <div class="col-9 p-3" style="padding: 50px;margin-bottom:50px">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
+            </div>
+            <div class="col-9 p-3" style="padding: 50px;margin-bottom:50px">
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu e-mail">
+            </div>
+            <div class="input-group p-3 w-75" style="padding: 50px;margin-bottom:30px;">
+                <span class="input-group-text">Digite sua mensagem</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <button type="button" class="btn btn-secondary" style="margin-top: 30px; margin-left: 20px; margin-bottom:40px">Enviar</button>
+        </section>
+
+        <footer style="background-color:rgb(135, 135, 135, 0.3); font-size:smaller;" class="page-footer" >
+            <div class="text-center">
+            <i>Copyright © 2022 Reginaldo G. Santos - Todos os direitos reservados</i>
+            </div>
+        </footer>
+    </body>
+</html>
