@@ -12,86 +12,101 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         
 		<!-- NAVBAR --> <!-- Importado com Bootstrap -->
-		<nav class="navbar navbar-expand-lg w-100 p-2 bg-light position-fixed">
-            <div class="container-fluid">
+		<nav class="navbar navbar-expand-lg w-100 p-2 position-fixed fixed-top navbar-dark bg-dark">
+            <div class="container-fluid" style="display: flex; flex-direction: row; justify-content: center; align-itens: center; width:1000px;">
             <a class="navbar-brand" href="#">Reginaldo G. Santos</a> 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link" href="#home">Home</a>
                 <a class="nav-link" href="#formacao">Formação</a>
                 <a class="nav-link" href="#projetos">Projetos</a>
                 <a class="nav-link" href="#contato">Contato</a>
                 </div>
             </div>
         </nav>
-		
+	
         <!-- HOME-->
-        <section id="home" style="background-color:rgba(3, 58, 153, 0.077); padding-left:20px; padding-top: 70px; padding-bottom: 80px;font: message-box;">
-            <div class="home-info" style="display: flex; justify-content:flex-start; object-fit: scale-down; padding-top: 80px; padding-bottom: 100px;"> <!-- Tag's CSS inseridas no formato inline por se tratar de um projeto simplificado -->
-				  <h4>Sobre mim</h4>
-				  <div style="margin-top: 80px; padding-right: 40px; font-size: large;">
-					Meu nome é Reginaldo. Tenho 32 anos.<br>
-					Sou natural de São Paulo - SP e atualmente resido em Atibaia - SP.<br>
-					Sou casado e tenho uma filha.<br>
-					Tenho experiência nas áreas de manutenção mecânica,<br>
-					elétrica e Automação Industrial.<br>
-					Gosto de tecnologia e atualmente estou cursando<br>
-					Análise e Desenvolvimento de Sistemas na Uninter.<br>
-					Meus hobbies são ouvir música, ler e assistir vídeos no Youtube.<br>
-				   </div>
-				   <img src="./img/foto-perfil.jpg" alt="foto-perfil" class="rounded-circle" style="width: 170px; height:170px; margin-top: 80px;">
+        <section id="home" style="display: flex; flex-direction: row; justify-content: center; align-itens: center;padding-top: 220px ;">
+            <div class="home-info"style="background-color:rgba(3, 58, 153, 0.077); width: 1000px; height: 500px; position: relative; border-radius: 30px"> <!-- Tag's CSS inseridas no formato inline por se tratar de um projeto simplificado -->
+				<div style=" position: absolute; top: 50%; left:10%; transform: translate(0, -50%); ">
+					<table style=" font-size:medium;" >
+						<tr>
+							<th style="font-size: 2em"> Sobre mim:</th>
+						</tr>
+						<tr>
+							<td>Meu nome é Reginaldo. Tenho 32 anos.<br>
+								Sou natural de São Paulo - SP e atualmente resido em Atibaia - SP.<br>
+								Sou casado e tenho uma filha.<br>
+								Tenho experiência nas áreas de manutenção mecânica,<br>
+								elétrica e Automação Industrial.<br>
+								Gosto de tecnologia e atualmente estou cursando<br>
+								Análise e Desenvolvimento de Sistemas na Uninter.<br>
+								Meus hobbies são ouvir música, ler e assistir vídeos no Youtube.</td>
+							<td><img src="./img/foto-perfil.jpg" alt="foto-perfil" class="rounded-circle" style="width: 170px; height:170px; margin-left: 50px;"></td>
+						</tr>
+					</table>
+				</div>
             </div>
         </section>
         
-        <!-- FORMAÇÃO--> <!-- Importado com Bootstrap -->
-        <section id="formacao" style="padding-top: 60px;padding-left:20px;font: message-box;">
-            <h4>Formação</h4>
-            <div class="carousel slide" data-bs-ride="carousel" style="padding-top:20px">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" style="padding-left: 20px;">
-                        <img src="img/uninter.png" class="d-block w-100" alt="ADS">
-                    </div>
-                    <div class="carousel-item" style="padding-left: 20px;">
-                        <img src="img/fesb.png" class="d-block w-100"alt="Técnico">
-                    </div>
-                    <div class="carousel-item" style="padding-left: 20px;">
-                        <img src="img/cisco.png" class="d-block w-100" alt="cisco">
-                    </div>
-                </div>
-            </div>
+		<!-- FORMAÇÃO--> <!-- Importado com Bootstrap -->
+        <section id="formacao" style="display: flex; flex-direction: row; justify-content: center; align-itens: center;padding-top: 220px; ">
+			<div class="formacao-info"style="background-color:white; width: 1000px; height: 500px; position: relative;"> <!-- Tag's CSS inseridas no formato inline por se tratar de um projeto simplificado -->
+				<div style="padding-top: 70px; padding-left: 200px">
+					<h4 style="margin-left:-100px; font-size: 2em; font-weight: bold">Formação:</h4>
+					<div class="carousel slide" data-bs-ride="carousel" style="padding-top:20px">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/uninter.png" class="d-block w-75" alt="ADS">
+							</div>
+							<div class="carousel-item">
+								<img src="img/fesb.png" class="d-block w-75"alt="Técnico">
+							</div>
+							<div class="carousel-item">
+								<img src="img/cisco.png" class="d-block w-75" alt="cisco"><td>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
         </section>
-
-        <!-- PROJETOS-->
-        <section id="projetos" style="background-color:rgba(1, 4, 11, 0.815); padding-left:20px; padding-top: 40px; padding-bottom: 10px;font: message-box; color: whitesmoke;">
-            <div class="home-info" style=" object-fit: scale-down; padding-top: 20px;">
-                <h4> Visite minhas redes para conhecer meus projetos:</h4>
-                <div style="margin-top: 20px; font-size: large;">
-                  <a href="https://github.com/reginaldogalli"><img src="img/github.png" class="rounded  img-responsive img-thumbnail" style="height:120px; margin-left: 200px; margin-right: 100px; margin-bottom:40px; margin-top:20px;"></a>
-                  <a href="https://www.linkedin.com/in/reginaldogalli/"><img src="img/linkedin.png" class="rounded  img-responsive img-thumbnail" style="height:120px; margin-left: 200px; margin-right: 100px; margin-bottom:40px; margin-top:20px;"></a>
-                </div>
-            </div>
+		
+		<!-- PROJETOS-->
+        <section id="projetos" style=" display: flex; flex-direction: row; justify-content: center; align-items: center; padding-top: 220px; color: whitesmoke;">
+            <div class="projetos-info" style="background-color:#212529; height: 400px; width: 500; margin-top: 50px; border-radius: 30px ">
+				<h4 style="margin: 20px; font-size:2em"> Visite minhas redes para conhecer meus projetos:</h4>
+				<div> 
+					<a href="https://github.com/reginaldogalli"><img src="img/github.png" class="rounded img-responsive img-thumbnail" style="height:150px; width: 150px; position: relative; left:50%; top: 50%; transform: translate(-120%, 40%)"></a>
+				</div>
+				<div>
+					<a href="https://www.linkedin.com/in/reginaldogalli/"><img src="img/linkedin.png" class="rounded img-responsive img-thumbnail" style="height:150px; width: 150px; position: relative; left:50%; top: 50%; transform: translate(20%,-60%)"></a>
+				</div>
+			</div>
         </section>
 
         <!-- CONTATO--> <!-- Importado com Bootstrap -->
-        <section id="contato" style="padding: 20px; font: message-box; padding-top:100px">
-            <h4 style="margin-bottom:40px">Contato</h4>
-            <div class="col-9 p-3" style="padding: 50px;margin-bottom:50px">
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
+		<section id="contato" style="display: flex; flex-direction: row; justify-content: center; align-itens: center;padding-top: 350px; margin-bottom: 50px">
+            <div class="contato-info"style="background-color:rgba(3, 58, 153, 0.077); width: 1000px; height: 420px; position: relative; border-radius: 30px"> <!-- Tag's CSS inseridas no formato inline por se tratar de um projeto simplificado -->
+				<h4 style="margin:30px ;font-size:2em; font-weight: bold; margin-bottom: 30px">Contato:</h4>
+				<div class="col-9 p-3" style="position: relative; left:50%; top: 50%; transform: translate(-50%, -300%)">
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
+				</div>
+				<div class="col-9 p-3" style="position: relative; left:50%; top: 50%; transform: translate(-50%, -300%)">
+					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu e-mail">
+				</div>
+				<div class="input-group p-3 w-75" style="position: relative; left:50%; top: 50%; transform: translate(-50%, -220%)">
+					<span class="input-group-text">Digite <br>sua mensagem</span>
+					<textarea class="form-control" aria-label="With textarea"></textarea>
+				</div>
+					<button type="button" class="btn btn-secondary" style="position: relative; left:50%; top: 50%; transform: translate(-70%, -500%)">Enviar</button>
+				</div>
             </div>
-            <div class="col-9 p-3" style="padding: 50px;margin-bottom:50px">
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu e-mail">
-            </div>
-            <div class="input-group p-3 w-75" style="padding: 50px;margin-bottom:30px;">
-                <span class="input-group-text">Digite sua mensagem</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
-            </div>
-            <button type="button" class="btn btn-secondary" style="margin-top: 30px; margin-left: 20px; margin-bottom:40px">Enviar</button>
         </section>
-
-        <footer style="background-color:rgb(135, 135, 135, 0.3); font-size:smaller;" class="page-footer" >
+        
+        <footer style="background-color:#212529; color: whitesmoke" class="page-footer" >
             <div class="text-center">
             <i>Copyright © 2022 Reginaldo G. Santos - Todos os direitos reservados</i>
             </div>
