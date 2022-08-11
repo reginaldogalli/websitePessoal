@@ -54,29 +54,39 @@
         
         <!-- FORMAÇÃO--> <!-- Importado com Bootstrap -->
         <section id="formacao" style="display: flex; flex-direction: row; justify-content: center; align-itens: center;padding-top: 220px; ">
-			<div class="formacao-info"style="background-color:rgba(3, 58, 153, 0.077); width: 1200px; height: 700px; position: relative;border-radius: 30px"> <!-- Tag's CSS inseridas no formato inline por se tratar de um projeto simplificado -->
-				<div style="padding-top: 70px; padding-left: 200px">
-					<h4 style="margin-left:-100px; font-size: 2em; font-weight: bold">Formação:</h4>
-					<div class="carousel slide" data-bs-ride="carousel" style="padding-top:20px">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/uninter.png" class="d-block w-75" alt="ADS">
-							</div>
-							<div class="carousel-item">
-								<img src="img/fesb.png" class="d-block w-75"alt="Técnico">
-							</div>
-							<div class="carousel-item">
-								<img src="img/cisco.png" class="d-block w-75" alt="cisco"><td>
+			<div class="formacao-info"style="background-color:white; width: 1000px; height: 750px; position: relative;border-radius: 30px"> <!-- Tag's CSS inseridas no formato inline por se tratar de um projeto simplificado -->
+				<h4 style="margin-left:60px ;margin-top: 20px; font-size:2em; font-weight: bold; margin-bottom:80px">Formação:</h4>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+				<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+				<div class="col-md-12" id="slides" style="position: relative; left:50%; top: 50%; transform: translate(-50%, -65%)">
+					<div class="row">
+						<div id="meuCarousel" class="carousel slide w-100" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#meuCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#meuCarousel" data-slide-to="1"></li>
+								<li data-target="#meuCarousel" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100 img-fluid" src="img/uninter.png" alt="primeiro slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100 img-fluid" src="img/fesb.png" alt="segundo slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100 img-fluid" src="img/cisco.png" alt="terceiro slide">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
         </section>
-		
-	<!-- PROJETOS-->
-        <section id="projetos" style=" display: flex; flex-direction: row; justify-content: center; align-items: center; padding-top: 220px; color: whitesmoke;">
-            <div class="projetos-info" style="background-color:#212529; height: 400px; width: 500; margin-top: 50px; border-radius: 30px ">
+		 
+		<!-- PROJETOS-->
+		<section id="projetos" style=" display: flex; flex-direction: row; justify-content: center; align-items: center; padding-top: 220px; color: whitesmoke;">
+			<div class="projetos-info" style="background-color:#212529; height: 400px; width: 500; margin-top: 50px; border-radius: 30px ">
 				<h4 style="margin: 20px; font-size:2em"> Visite minhas redes para conhecer meus projetos:</h4>
 				<div> 
 					<a href="https://github.com/reginaldogalli"><img src="img/github.png" class="rounded img-responsive img-thumbnail" style="height:150px; width: 150px; position: relative; left:50%; top: 50%; transform: translate(-120%, 40%)"></a>
@@ -85,12 +95,12 @@
 					<a href="https://www.linkedin.com/in/reginaldogalli/"><img src="img/linkedin.png" class="rounded img-responsive img-thumbnail" style="height:150px; width: 150px; position: relative; left:50%; top: 50%; transform: translate(20%,-60%)"></a>
 				</div>
 			</div>
-        </section>
+		</section>
 
-        <!-- CONTATO--> <!-- Importado com Bootstrap -->
-	<section id="contato" style="display: flex; flex-direction: row; justify-content: center; align-itens: center;padding-top: 350px; margin-bottom: 50px">
+		<!-- CONTATO--> <!-- Importado com Bootstrap -->
+		<section id="contato" style="display: flex; flex-direction: row; justify-content: center; align-itens: center;padding-top: 350px; margin-bottom: 50px">
             <div class="contato-info"style="background-color:rgba(3, 58, 153, 0.077); width: 1000px; height: 420px; position: relative; border-radius: 30px"> <!-- Tag's CSS inseridas no formato inline por se tratar de um projeto simplificado -->
-				<h4 style="margin:30px ;font-size:2em; font-weight: bold; margin-bottom: 30px">Contato:</h4>
+				<h4 style="margin:30px ;font-size:2em; font-weight: bold; margin-bottom: 30px; margin-left: 70px">Contato:</h4>
 				<div class="col-9 p-3" style="position: relative; left:50%; top: 50%; transform: translate(-50%, -300%)">
 					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
 				</div>
