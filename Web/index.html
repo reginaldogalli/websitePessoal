@@ -7,6 +7,7 @@
 		<!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     </head>
+	
     <body style="background-color:white">
 		<!-- Bootstrap JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -40,10 +41,10 @@
 
 			.in{
 			width:1000px;
-			height:500px;
+			height:600px;
 			position:relative;
 			background-image: url("https://external-preview.redd.it/Pa3RFtBckwWP6Ux-D21mUpEfxZqVJXIP_0LfNRtE26E.png?auto=webp&s=4e7185a82b14a202068f8aaed423a1a07071fb13");
-			background-size: 1000px;
+			background-size: 1100px;
 			border-radius:30px
 			}
 			
@@ -82,44 +83,31 @@
 			margin:10px;
 			}
 		</style>
-	
-        <!-- HOME-->
-        <section id="home" style="padding-top: 170px ;">
-			<div class="out">
-				<div class="in">
-					<div class="pos">
-						<div class="box" style=" height:150px; width:280px; left:-165px; top:120px; transform:translate(-50px,-50px)">
-							<h2>Sobre mim:</h2>
-								<div class="text" style="font-weight:bold">
-									Técnico em Automação      <br>
-									Industrial e estudante de <br>
-									Análise e Desenvolvimento <br>
-									de Sistemas.               <br>
-								</div>
-						</div>
-						<div class="box" style=" left:115px; top:-30px; transform:translate(-50px,-50px)">
-							<img src="img/foto-perfil.jpg" alt="foto-perfil" style="width: 135px; height:135px; border-radius:50%; margin:10px">
-						</div>
-						<div class="box" style="height:330px; width:430px; left:-165px; top:-40px; transform:translate(-50px,-50px); border-radius:30px; background-color: white; opacity:.8">
-							<div class="text">
-								<br>
+		
+		<!-- HOME-->
+        <section id="home" style="display: flex; flex-direction: row; justify-content: center; align-itens: center;padding-top: 170px ;">
+            <div class="in"> <!-- Tag's CSS inseridas no formato inline por se tratar de um projeto simplificado -->
+				<div style=" position: absolute; top: 50%; left:10%; transform: translate(0, -50%); ">
+					<table style=" font-size:medium;" >
+						<tr>
+							<th style="font-size: 2em"> Sobre mim:</th>
+						</tr>
+						<tr>
+							<td style="background-color:white; border-radius:20px; font-size:0.9em; padding:10px">
 								<p>Meu nome é Reginaldo. Tenho 32 anos.<br>
-								Sou natural de São Paulo - SP e atualmente moro em
-								Atibaia - SP. Sou casado e tenho uma filha.</p>
-								<p>Tenho experiência nas áreas de manutenção
-								Elétrica, Mecânica e Automação Industrial.
-								Gosto de tecnologia e atualmente estou cursando o
-								segundo ano da faculdade de
-								Análise e Desenvolvimento de Sistemas na Uninter.</p>
-								Desenvolvi este site como atividade prática da <br>
-								disciplina de Ferramentas de Desenvolvimento Web.<br>
-								Meus hobbies são ouvir música, ler e assitir<br>
-								vídeos no YouTube.<br>
-							</div>
-						</div>
-					</div>
+								Sou natural de São Paulo - SP e atualmente moro em Atibaia - SP.<br>
+								Sou casado e tenho uma filha.</p>
+								<p>Tenho experiência nas áreas de manutenção Elétrica, Mecânica e Automação
+								Industrial. Gosto de tecnologia e atualmente estou cursando o segundo ano da<br>
+								faculdade de Análise e Desenvolvimento de Sistemas na Uninter.</p>
+								<p>Desenvolvi este site como atividade prática da disciplina de Ferramentas<br>
+								de Desenvolvimento Web.</p>
+								Meus hobbies são ouvir música, ler e assitir vídeos no YouTube.</td>
+							<td><img src="./img/foto-perfil.jpg" alt="foto-perfil" class="rounded-circle" style="width: 150px; height:150px; margin-left: 70px;"></td>
+						</tr>
+					</table>
 				</div>
-			</div>
+            </div>
         </section>
         
         <!-- FORMAÇÃO--> <!-- Importado com Bootstrap -->
